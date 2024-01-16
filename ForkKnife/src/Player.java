@@ -1,6 +1,6 @@
 package graphics;
-
-public class Player {
-  x=aweifjioawe;
+import java.awt.Rectangle;
+public class Player extends Rectangle {
+  
 
 }
