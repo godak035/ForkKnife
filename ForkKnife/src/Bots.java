@@ -1,10 +1,9 @@
-package forkknife;
+import java.util.Rectangle;
 
-public class Bots {
+public class Bots extends Rectangle{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	//Attributes
+	int x,y,size,vx,vy;
+	Bots(){
 	}
-
 }
