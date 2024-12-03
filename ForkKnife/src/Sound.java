@@ -22,8 +22,8 @@ public class Sound {
 	public Sound() {
 		
 		//Sound collection
-		soundURL[1] = getClass().getResource("/Assets/Music/spies.wav");
-		soundURL[0] = getClass().getResource("/Assets/Music/game.wav");
+		soundURL[1] = getClass().getResource("ForkKnife/src/Assets/Music/spies.wav");
+		soundURL[0] = getClass().getResource("src/Assets/Music/game.wav");
 	}
 	
 	/**

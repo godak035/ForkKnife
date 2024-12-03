@@ -60,7 +60,7 @@ public class ForkKnife implements ActionListener {
     public static Player player = new Player();
     Map map = new Map();
     Weapon gun = new Weapon();
-    Sound sound = new Sound();
+    //Sound sound = new Sound();
 
 
     // RECTANGLES
@@ -249,7 +249,7 @@ public class ForkKnife implements ActionListener {
                 stormDelayTimer.start();
 
                 // Switching sounds
-                sound.stop();    
+                //sound.stop();
                 playMusic(1);
 
                 gc.setVisible(true);
@@ -334,16 +334,16 @@ public class ForkKnife implements ActionListener {
      * @param i : The song to be played (1 for intro screen, 0 for main game)
      */
     public void playMusic(int i) {
-        sound.setFile(i);
-        sound.play();
-        sound.loop();
+        //sound.setFile(i);
+        //sound.play();
+        //sound.loop();
     }
 	
     /**
      * Stops the music
      */
     public void stopMusic() {
-	    sound.stop();
+	    //sound.stop();
     }
 
     /**
@@ -880,18 +880,18 @@ public class ForkKnife implements ActionListener {
 
         try {
             // Images load here
-            playerImg = ImageIO.read(new File("Assets/Images/ForkKnifePlayer.png"));
-            enemyImg = ImageIO.read(new File("Assets/Images/ForkKnifeEnemy.png"));
-            gunImg = ImageIO.read(new File("Assets/Images/ForkKnifeGun.png"));
-            bulletImg = ImageIO.read(new File("Assets/Images/ForkKnifeBullet.png"));
-            logo = ImageIO.read(new File("Assets/Images/Forknife.png"));
-            helpScreen = ImageIO.read(new File("Assets/Images/helpScreen.png"));
-            backgroundWater = ImageIO.read(new File("Assets/Images/ForkKnifeBackgroundWater.png"));
-            rock = ImageIO.read(new File("Assets/Images/ForkKnifeRock.png"));
-            bush = ImageIO.read(new File("Assets/Images/ForkKnifeBush.png"));
-            grass = ImageIO.read(new File("Assets/Images/ForkKnifeGrass.png"));
-            knife = ImageIO.read(new File("Assets/Images/Knife.png"));
-            fork = ImageIO.read(new File("Assets/Images/Fork.png"));
+            playerImg = ImageIO.read(new File("ForkKnife/src/Assets/Images/ForkKnifePlayer.png"));
+            enemyImg = ImageIO.read(new File("ForkKnife/src/Assets/Images/ForkKnifeEnemy.png"));
+            gunImg = ImageIO.read(new File("ForkKnife/src/Assets/Images/ForkKnifeGun.png"));
+            bulletImg = ImageIO.read(new File("ForkKnife/src/Assets/Images/ForkKnifeBullet.png"));
+            logo = ImageIO.read(new File("ForkKnife/src/Assets/Images/Forknife.png"));
+            helpScreen = ImageIO.read(new File("ForkKnife/src/Assets/Images/helpScreen.png"));
+            backgroundWater = ImageIO.read(new File("ForkKnife/src/Assets/Images/ForkKnifeBackgroundWater.png"));
+            rock = ImageIO.read(new File("ForkKnife/src/Assets/Images/ForkKnifeRock.png"));
+            bush = ImageIO.read(new File("ForkKnife/src/Assets/Images/ForkKnifeBush.png"));
+            grass = ImageIO.read(new File("ForkKnife/src/Assets/Images/ForkKnifeGrass.png"));
+            knife = ImageIO.read(new File("ForkKnife/src/Assets/Images/Knife.png"));
+            fork = ImageIO.read(new File("ForkKnife/ssrc/Assets/Images/Fork.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
